@@ -4,7 +4,7 @@ This project is a simple **Kanban Board** designed to help users manage tasks ef
 
 ## About the Project  
 
-This Kanban board was developed as part of my **traning at Mindset**, marking my **fifth project** during the training. What made this project special was that it was my **first time working in a team**, and I had the opportunity to lead the team as the **Team Leader**.  
+This Kanban board was developed as part of my **traning at Mindset**, marking my **final project** during the training. What made this project special was that it was my **first time working in a team**, and I had the opportunity to lead the team as the **Team Leader**.  
 
 ##  Key Features  
 - Add new tasks  
@@ -16,7 +16,7 @@ This Kanban board was developed as part of my **traning at Mindset**, marking my
 - HTML, CSS, JavaScript 
 
 ##  Development Process  
-One of the most exciting aspects of this project was our ability to complete it in just **two working days**. Despite the time constraints, our team managed to stay well-organized and deliver a functional product efficiently.  
+One of the most exciting aspects of this project was our ability to complete it in just **there working days**. Despite the time constraints, our team managed to stay well-organized and deliver a functional product efficiently.  
 
 ##  What I Learned  
 - **Teamwork & Leadership**: This was my first experience leading a team, and it was incredibly rewarding to see how collaboration and organization improved our efficiency.  
