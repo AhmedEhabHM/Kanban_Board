@@ -1,0 +1,483 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2B2C37; 
+  color: #FFFFFF;
+  margin: 0;
+  display: flex;
+}
+
+.sidebar {
+  background: #1E1F29;
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.task {
+  background: #635FC7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Button - Same Style as "Add Task" */
+.del {
+  background: white; 
+  color: #8E44AD; /* Purple text */
+  padding: 6px 12px;
+  border: 2px solid #8E44AD; /* Purple border */
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: auto; /* Align to the right */
+  display: block;
+}
+
+/* Delete Button Hover Effect */
+.del:hover {
+  background: #8E44AD; /* Purple */
+  color: white;
+}
+
+.task {
+  background: #635FC7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  cursor: grab;
+}
+
+/* Dragging Effect */
+.task:active {
+  opacity: 0.5;
+}
+
+/* Highlight when dragging over column */
+.column.drag-over {
+  border: 2px dashed #fff;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  background: #3E3F4E;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+nav ul li.active {
+  background: #635FC7;
+}
+
+nav ul li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.create-board {
+  font-weight: bold;
+  color: #635FC7;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Sidebar in Light Mode */
+.light-mode .sidebar {
+  background: #ffffff;
+  color: #333;
+}
+
+/* Active Nav in Light Mode */
+.light-mode nav ul li {
+  background: #E4E4E7;
+  color: #333;
+}
+
+.light-mode nav ul li.active {
+  background: #635FC7;
+  color: white;
+}
+
+/* Theme Toggle */
+.light-mode .theme-toggle {
+  background: #E4E4E7;
+}
+
+.light-mode .slider {
+  background-color: #ccc;
+}
+
+.light-mode input:checked + .slider {
+  background-color: #635FC7;
+}
+
+/* Main Section */
+.light-mode main {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+/* Header */
+.light-mode header {
+  border-bottom: 2px solid #ccc;
+}
+
+/* Kanban Board */
+.light-mode .kanban-board {
+  background: #f9f9f9;
+}
+
+/* Columns */
+.light-mode .column {
+  background: #ddd;
+  color: #222;
+}
+
+/* Tasks */
+.light-mode .task {
+  background: #635FC7;
+  color: white;
+}
+
+/* Add Task Button */
+.light-mode .add-task {
+  background: #635FC7;
+  color: white;
+}
+
+/* Hide Sidebar Button */
+.light-mode .hide-sidebar {
+  color: #333;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: #3E3F4E;
+  border-radius: 20px;
+}
+
+.theme-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #635FC7;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #FFFFFF;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+  background-color: #635FC7;
+}
+
+.hide-sidebar {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hide-sidebar img {
+  width: 24px;
+  height: 24px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #3E3F4E;
+  padding-bottom: 10px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.add-task {
+  background: #635FC7;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-task img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.menu-toggle{
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor:pointer;
+  color: #4c4c4d; 
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.column {
+  background: #3E3F4E;
+  padding: 15px;
+  border-radius: 10px;
+  width: 30%;
+  color: white;
+}
+
+.column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.task {
+  background: #635FC7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.hide-sidebar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  font-size: 16px;
+}
+
+.hide-sidebar:hover {
+  color: #635FC7;
+}
+
+.hidden {
+  display: none;
+}
+
+/* add Task Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2B2C37;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px;
+  color: white;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal input, .modal textarea, .modal select {
+  padding: 8px;
+  border: 1px solid #635FC7;
+  border-radius: 4px;
+  background: #2B2C37;
+  color: white;
+  font-family: Arial, sans-serif;
+
+}
+
+.modal button {
+  padding: 10px;
+  background: #635FC7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modal button:hover {
+  background: #4B49A4;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Edit Task Modal */
+#editTaskModal {
+  background: #2B2C37;
+  color: white;
+}
+
+#editTaskModal .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#editTaskModal input, #editTaskModal textarea, #editTaskModal select {
+  padding: 8px;
+  border: 1px solid #635FC7;
+  border-radius: 4px;
+  background: #2B2C37;
+  color: white;
+}
+
+#editTaskModal button {
+  padding: 10px;
+  background: #635FC7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#editTaskModal button:hover {
+  background: #4B49A4;
+}
+
+/* Show Sidebar Button */
+.show-sidebar {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  background: #635FC7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.show-sidebar img {
+  width: 20px;
+  height: 20px;
+}
+
+.show-sidebar.hidden {
+  display: none; /* Hide the "Show Sidebar" button by default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  .kanban-board {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+  main {
+    padding: 10px;
+  }
+}
