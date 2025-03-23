@@ -27,4 +27,4 @@ One of the most exciting aspects of this project was our ability to complete it 
 This project was a great experience, both technically and personally. It strengthened my leadership skills, helped me collaborate better with a team, and showed me how much can be achieved in a short time with the right mindset! 🚀  
 
 ##  Preview
-
+https://ahmedehabhm.github.io/Kanban_Board/
