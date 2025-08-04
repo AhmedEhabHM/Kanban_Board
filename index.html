@@ -9,7 +9,6 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-top">
         <img src="images/logo-mobile.svg" alt="Kanban Logo" class="logo" onerror="this.src='https://via.placeholder.com/30'" />
@@ -49,7 +48,6 @@
       </button>
     </aside>
 
-    <!-- Main Content -->
     <main>
       <header>
         <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
@@ -63,7 +61,6 @@
         </div>
       </header>
 
-      <!-- Kanban Board -->
       <section class="kanban-board">
         <div class="column todo" data-category="TODO">
           <h3>🔵 TODO</h3>
@@ -77,7 +74,6 @@
       </section>
     </main>
 
-    <!-- Modal for Adding New Task -->
     <div id="taskModal" class="modal hidden">
       <div class="modal-content">
         <h2>Add New Task</h2>
@@ -93,7 +89,6 @@
       </div>
     </div>
 
-    <!-- Modal for Editing Task -->
     <div id="editTaskModal" class="modal hidden">
       <div class="modal-content">
         <h2>Edit Task</h2>
@@ -105,18 +100,19 @@
           <option value="DONE">Done</option>
         </select>
         <button id="saveEditedTask">Save Changes</button>
-        <button id="deleteTask">Delete Task</button>
+        <button id="deleteTask" class="delete-button">
+          <i class="fas fa-trash"></i> Delete Task
+        </button>
         <button id="closeEditModal">Close</button>
       </div>
     </div>
 
-    <!-- Modal for Editing Board -->
     <div id="editBoardModal" class="modal hidden">
       <div class="modal-content">
         <h2>Edit Board</h2>
         <input type="text" id="editBoardInput" placeholder="Board name" />
         <button id="saveEditedBoard">Save Changes</button>
-        <button id="deleteBoardButton">Delete Board</button>
+        <button id="deleteBoardButton" class="delete-button">Delete Board</button>
         <button id="closeEditBoardModal">Close</button>
       </div>
     </div>
