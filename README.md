@@ -1,30 +1,52 @@
-# Kanban Project  
+Kanban Project
 
-This project is a simple **Kanban Board** designed to help users manage tasks efficiently. It allows users to create, move, and delete tasks across different columns (e.g., To Do, In Progress, Done).  
+This is a simple yet effective Kanban Board designed to help users manage tasks visually and efficiently. It supports creating, moving, and deleting tasks across three main columns: To Do, In Progress, and Done.
 
-## About the Project  
+About the Project
 
-This Kanban board was developed as part of my **traning at Mindset**, marking my **final project** during the training. What made this project special was that it was my **first time working in a team**, and I had the opportunity to lead the team as the **Team Leader**.  
+This project was developed during my training at Mindset as the final project of the program. It was a special experience because it marked my first time working within a team, and I had the honor of serving as the Team Leader.
 
-##  Key Features  
-- Add new tasks  
-- Move tasks between columns (drag & drop)
-- Delete tasks when completed  
-- Simple and user-friendly interface  
+Key Features
 
-##  Tech Stack  
-- HTML, CSS, JavaScript 
+Create new tasks
 
-##  Development Process  
-One of the most exciting aspects of this project was our ability to complete it in just **there working days**. Despite the time constraints, our team managed to stay well-organized and deliver a functional product efficiently.  
+Drag and drop tasks between columns
 
-##  What I Learned  
-- **Teamwork & Leadership**: This was my first experience leading a team, and it was incredibly rewarding to see how collaboration and organization improved our efficiency.  
-- **Project Planning**: Managing time effectively to complete a project within a tight deadline.  
-- **Technical Growth**: Improving coding skills while working in a team environment.  
+Delete tasks upon completion
 
-##  Conclusion  
-This project was a great experience, both technically and personally. It strengthened my leadership skills, helped me collaborate better with a team, and showed me how much can be achieved in a short time with the right mindset! 
+Clean and user-friendly interface
 
-##  Live Link
-https://kanban-board-lovat-two.vercel.app/
+
+Tech Stack
+
+HTML
+
+CSS
+
+JavaScript
+
+
+Development Process
+
+We completed the entire project in just three working days. Despite the tight deadline, the team remained organized and focused, which allowed us to deliver a fully functional product on time.
+
+What I Learned
+
+Leadership & Collaboration: Leading a team for the first time helped me grow as a communicator and organizer.
+
+Time Management: Balancing speed and quality under time pressure.
+
+Technical Practice: Reinforced my frontend skills in a real project setting.
+
+
+Conclusion
+
+This project was a milestone in my journey — not just for the technical experience, but for what I learned about teamwork, leadership, and delivering under pressure.
+
+🔗 Live Demo
+
+View the project
+
+
+
+
